@@ -1,0 +1,161 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap');
+
+*{
+    background-color: #629ab9;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   gap: 2rem;
+   align-items: center;
+   visibility: hidden;  
+}
+li{
+font-size: 1.25rem;
+color: white;
+font-weight: 800;
+font-family: 'Poppins', sans-serif;
+text-transform: uppercase;
+cursor: pointer;
+}
+li:first-child{
+    white-space: nowrap;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    align-items: center;
+}
+.logo p{
+font-size: 2.5rem;
+font-weight: 700;
+color: white;
+font-family: 'Anton', sans-serif;
+
+}
+.close{
+    position: absolute;
+    right: 15px;
+    visibility: hidden;
+}
+svg{
+   
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+.largeScreennavbar{
+    visibility: hidden;
+}
+li:last-child{
+    font-size: 7rem;
+    position: relative;
+    top: -107px;
+    background: transparent;
+   }
+   main {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    visibility: visible;
+  }
+  main h1 {
+    font-weight: 300;
+    font-size: clamp(50px,4vw,60px);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  main p {
+    font-weight: 300;
+    font-size: clamp(20px,4vw,30px);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  main button {
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    font-size: clamp(12px,1vw,15px);
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+   
+  }
+  main button:hover {
+    box-shadow: 0 0 30px #ffffff86;
+  }
+  main .alert {
+    background-color: white;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 1rem;
+    opacity: 0;
+    transition: 1s ease;
+  }
+
+   
+@media only screen and (min-width:850px){  
+    .burger{
+        display: none;
+    }
+    .ul1{
+display: flex;
+flex-direction: row;
+list-style: none;
+gap: 2rem;
+align-items: center;
+    }
+   li:last-child{
+    font-size: 7rem;
+    position: relative;
+    top: -33px;    
+   }
+    .navbar{
+        display: none;
+    }
+    .largeScreennavbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        visibility: visible;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    
+    }
+    .largeScreennavbar p{
+font-size: 2.5rem;
+font-weight: 700;
+color: white;
+font-family: 'Anton', sans-serif;
+    }
+   
+}
+
